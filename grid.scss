@@ -1,0 +1,22 @@
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+h1 {
+    color: darkslateblue;
+    transform: translateY(100px);
+    padding: 0 $Distans / 10;
+    font-size: $Distans-text - 7;
+}
+h1:nth-child(1) {
+    margin-left: $Distans - 70;
+    border-right: $Distans / 100 solid grey;
+    margin-right: $Distans / 5;
+
+}
+h1:nth-child(3) {
+    margin-left: $Distans - 70;
+    border-right: $Distans / 100 solid grey;
+    margin-right: $Distans / 5;
+}
