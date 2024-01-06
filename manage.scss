@@ -1,0 +1,44 @@
+.manage {
+    background-color: whitesmoke;
+    color: black;
+    width: $Width;
+    height: $Height - 30;
+    position: absolute;
+    top: $Height * 4 - 30;
+    & > h2 {
+        margin-left: $Distans / 5;
+        font-size: $Distans-text / 5;
+    }
+    &>.border-1 {
+        position: relative;
+        left: ($Width - 10) / 6;
+        margin-top: $Height - 30 / 10;
+        width: $Width;
+        height: $Distans-text / 10;
+        margin-left: $Distans / 10;
+        & > .imag {
+            color: darkslateblue;
+            width: $Distans-text / 5;
+            height: $Distans-text / 5;
+            box-shadow: 1px 1px 4px 1px;
+            text-align: center;
+            padding-top: $Distans-text / 10;
+            padding-left: $Distans-text / 20;
+            padding-right: $Distans-text / 20;
+            border-radius: $Distans / 20;
+            position: absolute;
+            top: $Distans-text - 9.7;
+            left: $Distans-text - 14;
+        }
+    }
+    button {
+        border-radius: $Distans / 10;
+        position: relative;
+        top: ($Height - 10) / 10;
+        left: $Distans-text / 5;
+        width: $Width - 70;
+        height: $Height / 20;
+        color: white;
+        background-color: darkslateblue;
+    }
+}
