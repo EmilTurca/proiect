@@ -1,0 +1,114 @@
+$LightenColor: white;
+$DarkenColor: black;
+$DarkenViolet: darkslateblue;
+$Width: 100vw;
+$Height: 100vh;
+$Distans: 100px;
+$Distans-text: 10em;
+body {
+    padding: 0;
+    color: white;
+    width: $Width;
+    height: $Height * 4 + 35;
+    overflow-x: hidden;
+}
+.nav {
+    background-color: darkslateblue;
+    width: $Width;
+    height: $Height + $Height / 5;
+        & > .i-diuri {
+            display: none;
+        }
+        & > .litera {
+            margin-top: $Distans / 5;
+            font-size: $Distans / 2;
+            background-color: darkslateblue;
+            color: white;
+            border-radius: $Distans / 20;
+            width: $Width / 11 - 9;
+            height: $Height / 14 - 2;
+            position: fixed;
+            top: $Distans-text / 10 / 2;
+            left: $Distans-text / 10 /2;
+            transform: rotate(-25deg);
+            text-align: center;
+        }
+    & > .h1 {
+        position: relative;
+        left: $Distans-text / 10 / 2;
+        top: $Distans-text - 10.7;
+        font-size: $Distans-text / 3 - 1;
+        color: white;
+    }
+    & > p {
+        font-size: $Distans-text / 3.3 - 1;
+        display: inline-block;
+        margin-left: $Distans-text / 10;
+        margin-top: $Distans-text / 2;
+    }
+    & > .cuvinte {
+        position: relative;
+        top: $Height - 107;
+        color: grey;
+    }
+    & > .button-1 {
+        margin: 1.5em;
+        width: $Width / 2 - 10;
+        height: $Height / 10;
+        background-color: darkslateblue;
+        border-radius: 10%;
+        & > img {
+            margin-left: $Distans-text - 11.7;
+            margin-top: $Distans-text -11.5;
+            width: $Width / 2 - 4;
+            height: ($Height - 10) / 6;
+        }
+    }
+    & > .button-2 {
+        position: relative;
+        top: $Distans-text - 11.5;
+        width: $Width / 2 - 4;
+        height: ($Height - 1) / 9;
+        background-color: darkslateblue;
+        border-radius: 10%;
+        & > img {
+            margin-left: $Distans-text -10.6;
+            margin-top: $Distans-text -10.2;
+            width: $Width / 2 - 4;
+            height: ($Height - 9) / 9 - .5;
+            border-radius: 15%;
+        }
+    }
+    & > .white {
+        width: $Width / 2 - 10;
+        height: $Height / 2 - 10;
+        background-color: white;
+        transform: translateY(176px) translateX(-33px) rotate(-50deg);
+        border-radius: 0 10%;
+    }
+    & > .background {
+        width: $Width / 2 - 10;
+        height: $Height / 2 - 10;
+        background-color: white;
+        transform: translateY(-145px) translateX(305px) rotate(40deg);
+        border-radius: 10% 0;
+    }
+    & > .circle {
+        width: ($Width - 10) / 6;
+        height: $Height / 10;
+        background-color: white;
+        transform: translateY(-359px) translateX(198px);
+        background-color: darkslateblue;
+        border-radius: 100%;
+        border-bottom: $Distans / 2 + 5 solid white;
+    }
+    & > .telefon > img {
+        position: absolute;
+        top: $Distans-text - 66;
+        left: $Distans + 30;
+        width: $Width / 2 - 10;
+        height: $Height / 2 - 10;
+        background-color: darkslateblue;
+        border-radius: $Distans - 36;
+    }
+}
